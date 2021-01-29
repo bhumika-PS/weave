@@ -92,7 +92,7 @@ jobs:
       # Register qemu hooks, rebuild without coverage and push to dockerhub
       - deploy:
           command: |
-            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker login -u bhumikapaharia10 -p Root123!@#
             docker run --rm --privileged multiarch/qemu-user-static:register --reset
             wget https://github.com/estesp/manifest-tool/releases/download/v0.8.0/manifest-tool-linux-amd64
             chmod +x manifest-tool-linux-amd64
